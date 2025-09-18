@@ -1,222 +1,209 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策 - MindKeeper</title>
+<!doctype html>
+<html lang="zh" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Litto 隐私政策 / Privacy Policy</title>
+    <meta name="description" content="Litto app privacy policy in Chinese and English.">
     <style>
-        body {
-            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #1c1c1c;
+        --muted: #555;
+        --border: #e5e5e5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f0f10;
+          --fg: #f2f2f2;
+          --muted: #b9b9b9;
+          --border: #2b2b2b;
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h1 {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-        h2 {
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .emphasis {
-            font-weight: bold;
-        }
-        .language-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .language-switch a {
-            margin-left: 10px;
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-        .language-switch a.active {
-            color: #2c3e50;
-            cursor: default;
-        }
-        .content {
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
+      }
+      html,body { height: 100%; }
+      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--fg); }
+      .container { max-width: 820px; margin: 0 auto; padding: 24px; line-height: 1.65; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      .sub { color: var(--muted); margin-bottom: 24px; }
+      h2 { margin-top: 24px; font-size: 20px; }
+      ul { padding-left: 20px; }
+      .lang-switch { display: flex; gap: 8px; margin: 16px 0 24px; }
+      .lang-switch button { border: 1px solid var(--border); background: transparent; color: var(--fg); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
+      .lang-switch button.active { background: var(--fg); color: var(--bg); }
+      section[hidden] { display: none !important; }
+      footer { margin-top: 32px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 16px; }
+      .note { color: var(--muted); }
+      .brand { font-weight: 600; }
     </style>
-</head>
-<body>
-    <div class="language-switch">
-        <a href="#" id="zh-CN" class="active">中文</a>
-        <a href="#" id="en-US">English</a>
-    </div>
-    
-    <!-- 中文版本 -->
-    <div id="content-zh-CN" class="content active">
-        <h1>隐私政策</h1>
-        <p>感谢您选择使用MindKeeper应用。本隐私政策旨在帮助您了解我们如何收集、使用、存储和保护您的个人信息，以及您对这些信息拥有的权利。</p>
-        
+  </head>
+  <body>
+    <div class="container">
+      <h1>隐私政策 / Privacy Policy</h1>
+      <div class="sub">Litto · <span id="updated"></span></div>
+
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button id="btn-zh" role="tab" aria-controls="zh" aria-selected="true" class="active">中文</button>
+        <button id="btn-en" role="tab" aria-controls="en" aria-selected="false">English</button>
+      </div>
+
+      <!-- Chinese -->
+      <section id="zh" lang="zh" data-lang="zh">
+        <p>欢迎使用 <span class="brand">Litto</span>（以下简称“本应用”或“我们”）。我们非常重视您的隐私权，并致力于保护您的个人信息。本隐私政策详细说明我们如何收集、使用、存储和保护您的个人信息。</p>
+
         <h2>1. 我们收集的信息</h2>
-        <p>为了提供功能完善的专注力和时间管理服务，我们可能会收集以下信息：</p>
+        <p><strong>1.1 您主动提供的信息：</strong></p>
         <ul>
-            <li><span class="emphasis">账户信息</span>：当您使用Google账号登录时，我们会获取您的Google账号信息，仅用于身份验证和数据同步功能。</li>
-            <li><span class="emphasis">应用使用数据</span>：我们收集您使用设备上各应用的时间和频率数据，以帮助您了解自己的使用习惯，提高时间管理效率。这些数据仅存储在您的设备上，除非您主动选择同步到云端。</li>
-            <li><span class="emphasis">设备信息</span>：我们可能收集您的设备型号、操作系统版本等信息，以优化应用性能。</li>
-            <li><span class="emphasis">应用内购买信息</span>：当您进行应用内购买时，我们会处理相关交易信息。</li>
+          <li>专注记录和统计数据</li>
+          <li>标签和计划信息</li>
+          <li>应用设置和偏好</li>
         </ul>
-        
-        <h2>2. 我们如何使用您的信息</h2>
-        <p>我们使用收集的信息：</p>
+        <p><strong>1.2 自动收集的信息：</strong></p>
         <ul>
-            <li>提供、维护和改进我们的服务</li>
-            <li>帮助您跟踪和管理专注时间及应用使用情况</li>
-            <li>实现数据备份和同步功能</li>
-            <li>处理应用内购买交易</li>
-            <li>提供客户支持</li>
-            <li>发送服务通知和更新</li>
+          <li>设备信息（设备型号、操作系统版本）</li>
+          <li>应用使用统计（仅用于改进应用性能）</li>
+          <li>崩溃日志（用于修复bug）</li>
         </ul>
-        
-        <h2>3. 信息安全</h2>
-        <p>我们重视您的隐私，采取合理的安全措施保护您的个人信息不被未经授权访问、使用或泄露。您的应用使用数据主要存储在您的设备上，只有在您选择使用备份功能时才会上传到您授权的云端服务。</p>
-        
-        <h2>4. 权限说明</h2>
-        <p>我们的应用需要以下权限才能正常运行所有功能：</p>
+
+        <h2>2. 信息使用目的</h2>
+        <p>我们收集您的信息仅用于以下目的：</p>
         <ul>
-            <li><span class="emphasis">获取账户(GET_ACCOUNTS)</span>：用于实现Google账号登录和云端数据同步功能。我们仅使用此权限进行身份验证和数据备份，不会用于其他目的。</li>
-            <li><span class="emphasis">获取应用使用统计(PACKAGE_USAGE_STATS)</span>：用于收集您的应用使用时间和频率数据，帮助您了解自己的使用习惯和改善时间管理。这些数据仅用于应用内分析展示，不会分享给第三方。</li>
-            <li><span class="emphasis">查询应用列表(QUERY_ALL_PACKAGES)</span>：用于识别设备上安装的应用，以便统计各应用使用时间。我们不会收集应用内的数据或内容。</li>
-            <li><span class="emphasis">互联网访问(INTERNET)</span>：用于数据同步、更新和应用内购买功能。</li>
-            <li><span class="emphasis">振动(VIBRATE)</span>：用于提供定时器完成等通知提醒。</li>
-            <li><span class="emphasis">网络状态(ACCESS_NETWORK_STATE)</span>：用于检测网络连接状态，确保数据同步功能正常工作。</li>
-            <li><span class="emphasis">应用内购买(BILLING)</span>：用于处理高级功能的付费订阅。</li>
+          <li>提供专注计时和统计功能</li>
+          <li>同步您的数据到云端（如果您选择使用同步功能）</li>
+          <li>改进应用功能和用户体验</li>
+          <li>提供技术支持和客户服务</li>
+          <li>遵守法律法规要求</li>
         </ul>
-        
-        <h2>5. 儿童隐私</h2>
-        <p>我们的应用不针对13岁以下儿童，我们不会故意收集13岁以下儿童的个人信息。如果您是父母或监护人，发现您的孩子向我们提供了个人信息，请联系我们，我们将采取措施从我们的系统中删除这些信息。</p>
-        
-        <h2>6. 您的权利</h2>
-        <p>作为用户，您有权：</p>
+
+        <h2>3. 信息共享</h2>
+        <p>我们承诺不会出售、出租或以其他方式向第三方披露您的个人信息，除非：</p>
         <ul>
-            <li>访问您存储在我们服务中的个人信息</li>
-            <li>要求更正您的个人信息</li>
-            <li>删除您的账户和相关数据</li>
-            <li>拒绝数据处理</li>
-            <li>导出您的数据</li>
+          <li>获得您的明确同意</li>
+          <li>法律法规要求</li>
+          <li>为保护我们的合法权益</li>
+          <li>紧急情况下保护用户安全</li>
         </ul>
-        
-        <h2>7. 本隐私政策的变更</h2>
-        <p>我们可能会不时更新本隐私政策。当我们进行重大变更时，我们会通过应用内通知或其他适当方式通知您。我们建议您定期查看本政策以了解最新信息。</p>
-        
-        <h2>8. 联系我们</h2>
-        <p>如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
-        <p>邮箱：jibaichang@gmail.com</p>
-        
-        <p style="margin-top: 40px; color: #7f8c8d; font-size: 14px;">© 2024 MindKeeper. 保留所有权利。</p>
-    </div>
-    
-    <!-- 英文版本 -->
-    <div id="content-en-US" class="content">
-        <h1>Privacy Policy</h1>
-        
-        <p>Thank you for choosing MindKeeper. This Privacy Policy is designed to help you understand how we collect, use, store, and protect your personal information, as well as the rights you have regarding this information.</p>
-        
+
+        <h2>4. 数据安全</h2>
+        <p>我们采用行业标准的安全措施保护您的个人信息：</p>
+        <ul>
+          <li>数据加密存储和传输</li>
+          <li>访问控制与权限管理</li>
+          <li>定期安全审计与更新</li>
+          <li>员工隐私培训与保密协议</li>
+        </ul>
+
+        <h2>5. 您的权利</h2>
+        <p>您对自己的个人信息享有以下权利：</p>
+        <ul>
+          <li>访问权：查看我们持有的您的个人信息</li>
+          <li>更正权：要求更正不准确的个人信息</li>
+          <li>删除权：要求删除您的个人信息</li>
+          <li>限制处理权：限制我们处理您的个人信息</li>
+          <li>数据可携权：获取您的个人信息副本</li>
+        </ul>
+
+        <h2>6. 联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：</p>
+        <p>邮箱：<a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
+      </section>
+
+      <!-- English -->
+      <section id="en" lang="en" data-lang="en" hidden>
+        <p>Welcome to <span class="brand">Litto</span> ("the App", "we", or "us"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data.</p>
+
         <h2>1. Information We Collect</h2>
-        <p>To provide a comprehensive focus and time management service, we may collect the following information:</p>
+        <p><strong>1.1 Information You Provide:</strong></p>
         <ul>
-            <li><span class="emphasis">Account Information</span>: When you sign in with your Google account, we obtain your Google account information solely for authentication and data synchronization purposes.</li>
-            <li><span class="emphasis">App Usage Data</span>: We collect data about the time and frequency of your device's app usage to help you understand your habits and improve time management efficiency. This data is stored locally on your device unless you actively choose to sync it to the cloud.</li>
-            <li><span class="emphasis">Device Information</span>: We may collect information about your device model, operating system version, etc., to optimize application performance.</li>
-            <li><span class="emphasis">In-App Purchase Information</span>: When you make in-app purchases, we process the related transaction information.</li>
+          <li>Focus records and statistics</li>
+          <li>Tags and planning details</li>
+          <li>App settings and preferences</li>
         </ul>
-        
+        <p><strong>1.2 Information Collected Automatically:</strong></p>
+        <ul>
+          <li>Device information (model, OS version)</li>
+          <li>Usage analytics (used only to improve performance)</li>
+          <li>Crash logs (to fix bugs)</li>
+        </ul>
+
         <h2>2. How We Use Your Information</h2>
-        <p>We use the collected information to:</p>
+        <p>We collect your information solely for the following purposes:</p>
         <ul>
-            <li>Provide, maintain, and improve our services</li>
-            <li>Help you track and manage focus time and app usage</li>
-            <li>Enable data backup and synchronization</li>
-            <li>Process in-app purchase transactions</li>
-            <li>Provide customer support</li>
-            <li>Send service notifications and updates</li>
+          <li>Provide focus timer and statistics features</li>
+          <li>Sync your data to the cloud (if you choose to use the sync feature)</li>
+          <li>Improve features and user experience</li>
+          <li>Provide technical support and customer service</li>
+          <li>Comply with legal and regulatory requirements</li>
         </ul>
-        
-        <h2>3. Information Security</h2>
-        <p>We value your privacy and implement reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. Your app usage data is primarily stored on your device and is only uploaded to cloud services you authorize when you choose to use the backup feature.</p>
-        
-        <h2>4. Permission Explanation</h2>
-        <p>Our app requires the following permissions to function properly:</p>
+
+        <h2>3. Sharing of Information</h2>
+        <p>We do not sell or rent your personal information. We share it only when:</p>
         <ul>
-            <li><span class="emphasis">GET_ACCOUNTS</span>: Used for Google account login and cloud data synchronization. We only use this permission for authentication and data backup, not for other purposes.</li>
-            <li><span class="emphasis">PACKAGE_USAGE_STATS</span>: Used to collect data on your app usage time and frequency, helping you understand your habits and improve time management. This data is only used for in-app analysis and display and is not shared with third parties.</li>
-            <li><span class="emphasis">QUERY_ALL_PACKAGES</span>: Used to identify apps installed on your device to track usage time for each app. We do not collect data or content from within the apps.</li>
-            <li><span class="emphasis">INTERNET</span>: Used for data synchronization, updates, and in-app purchase functionality.</li>
-            <li><span class="emphasis">VIBRATE</span>: Used to provide notifications such as timer completion.</li>
-            <li><span class="emphasis">ACCESS_NETWORK_STATE</span>: Used to detect network connection status to ensure data synchronization works properly.</li>
-            <li><span class="emphasis">BILLING</span>: Used to process paid subscriptions for premium features.</li>
+          <li>We have your explicit consent</li>
+          <li>Required by law or legal process</li>
+          <li>Necessary to protect our legitimate rights and interests</li>
+          <li>Needed to protect user safety in an emergency</li>
         </ul>
-        
-        <h2>5. Children's Privacy</h2>
-        <p>Our application is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you are a parent or guardian and discover that your child has provided us with personal information, please contact us, and we will take steps to delete this information from our systems.</p>
-        
-        <h2>6. Your Rights</h2>
-        <p>As a user, you have the right to:</p>
+
+        <h2>4. Data Security</h2>
+        <p>We employ industry-standard safeguards to protect your information, including:</p>
         <ul>
-            <li>Access your personal information stored in our services</li>
-            <li>Request correction of your personal information</li>
-            <li>Delete your account and associated data</li>
-            <li>Refuse data processing</li>
-            <li>Export your data</li>
+          <li>Encryption for storage and transmission</li>
+          <li>Access control and permission management</li>
+          <li>Regular security reviews and updates</li>
+          <li>Employee privacy training and confidentiality agreements</li>
         </ul>
-        
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. When we make significant changes, we will notify you through in-app notifications or other appropriate means. We recommend that you regularly review this policy for the latest information.</p>
-        
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
-        <p>Email: jibaichang@gmail.com</p>
-        
-        <p style="margin-top: 40px; color: #7f8c8d; font-size: 14px;">© 2024 MindKeeper. All rights reserved.</p>
+
+        <h2>5. Your Rights</h2>
+        <p>You have the following rights over your personal information:</p>
+        <ul>
+          <li>Right of access: view the personal information we hold about you</li>
+          <li>Right to rectification: request correction of inaccurate information</li>
+          <li>Right to erasure: request deletion of your personal information</li>
+          <li>Right to restriction: limit how we process your personal information</li>
+          <li>Right to data portability: obtain a copy of your personal information</li>
+        </ul>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or need to exercise your rights, contact us at:</p>
+        <p>Email: <a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> Litto</div>
+      </footer>
     </div>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageLinks = document.querySelectorAll('.language-switch a');
-            const contents = document.querySelectorAll('.content');
-            
-            languageLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // 更新语言链接的激活状态
-                    languageLinks.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // 更新内容的显示状态
-                    const targetId = `content-${this.id}`;
-                    contents.forEach(content => {
-                        content.classList.remove('active');
-                        if (content.id === targetId) {
-                            content.classList.add('active');
-                        }
-                    });
-                    
-                    // 更新页面语言
-                    document.documentElement.lang = this.id;
-                });
-            });
-        });
+      (function() {
+        const qs = (s) => document.querySelector(s);
+        const langFromStorage = localStorage.getItem('litto_lang');
+        // Choose saved language, otherwise infer from navigator.language
+        const preferred = langFromStorage || (((navigator.language || '').toLowerCase().startsWith('zh')) ? 'zh' : 'en');
+
+        function setLang(lang) {
+          const zh = qs('#zh');
+          const en = qs('#en');
+          const btnZh = qs('#btn-zh');
+          const btnEn = qs('#btn-en');
+          const isZh = lang === 'zh';
+          zh.hidden = !isZh;
+          en.hidden = isZh;
+          btnZh.classList.toggle('active', isZh);
+          btnEn.classList.toggle('active', !isZh);
+          btnZh.setAttribute('aria-selected', String(isZh));
+          btnEn.setAttribute('aria-selected', String(!isZh));
+          localStorage.setItem('litto_lang', lang);
+          document.documentElement.lang = lang;
+        }
+
+        qs('#btn-zh').addEventListener('click', () => setLang('zh'));
+        qs('#btn-en').addEventListener('click', () => setLang('en'));
+
+        setLang(preferred);
+        qs('#year').textContent = new Date().getFullYear();
+        qs('#updated').textContent = new Date().toISOString().slice(0, 10);
+      })();
     </script>
-</body>
+  </body>
 </html>
