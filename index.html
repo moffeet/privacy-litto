@@ -1,209 +1,251 @@
-<!doctype html>
-<html lang="zh" translate="no">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Litto 隐私政策 / Privacy Policy</title>
-    <meta name="description" content="Litto app privacy policy in Chinese and English.">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litto Privacy Policy | Litto 隐私政策</title>
     <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #ffffff;
-        --fg: #1c1c1c;
-        --muted: #555;
-        --border: #e5e5e5;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #0f0f10;
-          --fg: #f2f2f2;
-          --muted: #b9b9b9;
-          --border: #2b2b2b;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      }
-      html,body { height: 100%; }
-      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--fg); }
-      .container { max-width: 820px; margin: 0 auto; padding: 24px; line-height: 1.65; }
-      h1 { margin: 0 0 8px; font-size: 28px; }
-      .sub { color: var(--muted); margin-bottom: 24px; }
-      h2 { margin-top: 24px; font-size: 20px; }
-      ul { padding-left: 20px; }
-      .lang-switch { display: flex; gap: 8px; margin: 16px 0 24px; }
-      .lang-switch button { border: 1px solid var(--border); background: transparent; color: var(--fg); padding: 6px 12px; border-radius: 8px; cursor: pointer; }
-      .lang-switch button.active { background: var(--fg); color: var(--bg); }
-      section[hidden] { display: none !important; }
-      footer { margin-top: 32px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 16px; }
-      .note { color: var(--muted); }
-      .brand { font-weight: 600; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .language-switcher button {
+            background: none;
+            border: 1px solid #3498db;
+            color: #3498db;
+            padding: 8px 16px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .language-switcher button:hover {
+            background: #3498db;
+            color: white;
+        }
+        
+        .language-switcher button.active {
+            background: #3498db;
+            color: white;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .last-updated {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .lang-zh {
+            display: block;
+        }
+        
+        .lang-en {
+            display: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .language-switcher {
+                text-align: center;
+            }
+            
+            .language-switcher button {
+                margin: 5px;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>隐私政策 / Privacy Policy</h1>
-      <div class="sub">Litto · <span id="updated"></span></div>
-
-      <div class="lang-switch" role="tablist" aria-label="Language switch">
-        <button id="btn-zh" role="tab" aria-controls="zh" aria-selected="true" class="active">中文</button>
-        <button id="btn-en" role="tab" aria-controls="en" aria-selected="false">English</button>
-      </div>
-
-      <!-- Chinese -->
-      <section id="zh" lang="zh" data-lang="zh">
-        <p>欢迎使用 <span class="brand">Litto</span>（以下简称“本应用”或“我们”）。我们非常重视您的隐私权，并致力于保护您的个人信息。本隐私政策详细说明我们如何收集、使用、存储和保护您的个人信息。</p>
-
-        <h2>1. 我们收集的信息</h2>
-        <p><strong>1.1 您主动提供的信息：</strong></p>
-        <ul>
-          <li>专注记录和统计数据</li>
-          <li>标签和计划信息</li>
-          <li>应用设置和偏好</li>
-        </ul>
-        <p><strong>1.2 自动收集的信息：</strong></p>
-        <ul>
-          <li>设备信息（设备型号、操作系统版本）</li>
-          <li>应用使用统计（仅用于改进应用性能）</li>
-          <li>崩溃日志（用于修复bug）</li>
-        </ul>
-
-        <h2>2. 信息使用目的</h2>
-        <p>我们收集您的信息仅用于以下目的：</p>
-        <ul>
-          <li>提供专注计时和统计功能</li>
-          <li>同步您的数据到云端（如果您选择使用同步功能）</li>
-          <li>改进应用功能和用户体验</li>
-          <li>提供技术支持和客户服务</li>
-          <li>遵守法律法规要求</li>
-        </ul>
-
-        <h2>3. 信息共享</h2>
-        <p>我们承诺不会出售、出租或以其他方式向第三方披露您的个人信息，除非：</p>
-        <ul>
-          <li>获得您的明确同意</li>
-          <li>法律法规要求</li>
-          <li>为保护我们的合法权益</li>
-          <li>紧急情况下保护用户安全</li>
-        </ul>
-
-        <h2>4. 数据安全</h2>
-        <p>我们采用行业标准的安全措施保护您的个人信息：</p>
-        <ul>
-          <li>数据加密存储和传输</li>
-          <li>访问控制与权限管理</li>
-          <li>定期安全审计与更新</li>
-          <li>员工隐私培训与保密协议</li>
-        </ul>
-
-        <h2>5. 您的权利</h2>
-        <p>您对自己的个人信息享有以下权利：</p>
-        <ul>
-          <li>访问权：查看我们持有的您的个人信息</li>
-          <li>更正权：要求更正不准确的个人信息</li>
-          <li>删除权：要求删除您的个人信息</li>
-          <li>限制处理权：限制我们处理您的个人信息</li>
-          <li>数据可携权：获取您的个人信息副本</li>
-        </ul>
-
-        <h2>6. 联系我们</h2>
-        <p>如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：</p>
-        <p>邮箱：<a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
-      </section>
-
-      <!-- English -->
-      <section id="en" lang="en" data-lang="en" hidden>
-        <p>Welcome to <span class="brand">Litto</span> ("the App", "we", or "us"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data.</p>
-
-        <h2>1. Information We Collect</h2>
-        <p><strong>1.1 Information You Provide:</strong></p>
-        <ul>
-          <li>Focus records and statistics</li>
-          <li>Tags and planning details</li>
-          <li>App settings and preferences</li>
-        </ul>
-        <p><strong>1.2 Information Collected Automatically:</strong></p>
-        <ul>
-          <li>Device information (model, OS version)</li>
-          <li>Usage analytics (used only to improve performance)</li>
-          <li>Crash logs (to fix bugs)</li>
-        </ul>
-
-        <h2>2. How We Use Your Information</h2>
-        <p>We collect your information solely for the following purposes:</p>
-        <ul>
-          <li>Provide focus timer and statistics features</li>
-          <li>Sync your data to the cloud (if you choose to use the sync feature)</li>
-          <li>Improve features and user experience</li>
-          <li>Provide technical support and customer service</li>
-          <li>Comply with legal and regulatory requirements</li>
-        </ul>
-
-        <h2>3. Sharing of Information</h2>
-        <p>We do not sell or rent your personal information. We share it only when:</p>
-        <ul>
-          <li>We have your explicit consent</li>
-          <li>Required by law or legal process</li>
-          <li>Necessary to protect our legitimate rights and interests</li>
-          <li>Needed to protect user safety in an emergency</li>
-        </ul>
-
-        <h2>4. Data Security</h2>
-        <p>We employ industry-standard safeguards to protect your information, including:</p>
-        <ul>
-          <li>Encryption for storage and transmission</li>
-          <li>Access control and permission management</li>
-          <li>Regular security reviews and updates</li>
-          <li>Employee privacy training and confidentiality agreements</li>
-        </ul>
-
-        <h2>5. Your Rights</h2>
-        <p>You have the following rights over your personal information:</p>
-        <ul>
-          <li>Right of access: view the personal information we hold about you</li>
-          <li>Right to rectification: request correction of inaccurate information</li>
-          <li>Right to erasure: request deletion of your personal information</li>
-          <li>Right to restriction: limit how we process your personal information</li>
-          <li>Right to data portability: obtain a copy of your personal information</li>
-        </ul>
-
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy or need to exercise your rights, contact us at:</p>
-        <p>Email: <a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
-      </section>
-
-      <footer>
-        <div>© <span id="year"></span> Litto</div>
-      </footer>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('zh')" id="btn-zh" class="active">中文</button>
+            <button onclick="switchLanguage('en')" id="btn-en">English</button>
+        </div>
+        
+        <!-- 中文版本 -->
+        <div id="content-zh" class="lang-zh">
+            <h1>隐私政策</h1>
+            <p class="last-updated">最后更新：2025年</p>
+            
+            <h2>引言</h2>
+            <p>我们尊重您的隐私。本政策说明我们收集哪些信息、如何使用以及您的选择。</p>
+            
+            <h2>1. 我们收集的信息</h2>
+            <p>我们会在您的设备上本地存储您的专注记录、标签、计划和应用设置。如果您使用 Apple 登录，我们可能会在本地保存您的 Apple 账户信息。如果您开启 iCloud 同步功能，我们会使用设备标识符通过 iCloud 在多设备间保持数据同步。我们不收集崩溃日志或统计分析数据。</p>
+            
+            <h2>2. 信息使用目的</h2>
+            <p>我们使用这些数据来提供专注计时功能、显示您的记录、保存您的设置，以及如果您开启 iCloud 同步功能，通过 iCloud 在多设备间保持数据同步。我们不会将您的数据用于广告或用户画像。</p>
+            
+            <h2>3. 信息共享</h2>
+            <p>我们不会向第三方出售或共享您的个人数据。除非您开启 iCloud 同步功能，否则您的数据将保留在您的设备上。我们仅在法律要求或保护用户安全时才会披露信息。</p>
+            
+            <h2>4. 数据安全</h2>
+            <p>您的数据存储在您的设备本地。如果您开启 iCloud 同步功能，数据传输会使用安全通道，并遵循 Apple 的安全措施。您可以通过卸载应用来删除所有本地数据。</p>
+            
+            <h2>5. 您的权利</h2>
+            <p>您可以在应用内查看和编辑您的数据。要删除所有本地数据，请卸载应用。您可以随时在设置中关闭 iCloud 同步功能。</p>
+            
+            <div class="contact-info">
+                <h3>6. 联系我们</h3>
+                <p>如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：</p>
+                <p><strong>邮箱：</strong><a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
+            </div>
+        </div>
+        
+        <!-- 英文版本 -->
+        <div id="content-en" class="lang-en">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: 2025</p>
+            
+            <h2>Introduction</h2>
+            <p>We respect your privacy. This policy explains what information we collect, how we use it, and your choices.</p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>We store your focus records, tags, plans, and app settings locally on your device. If you sign in with Apple, we may store your Apple account information locally. If you enable iCloud sync, we use a device identifier to keep your data synchronized across your devices via iCloud. We do not collect crash logs or analytics data.</p>
+            
+            <h2>2. Purpose of Information Use</h2>
+            <p>We use this data to provide focus timing features, display your records, save your settings, and keep your data synchronized across your devices via iCloud if you enable sync. We do not use your data for advertising or user profiling.</p>
+            
+            <h2>3. Information Sharing</h2>
+            <p>We do not sell or share your personal data with third parties. Your data stays on your device unless you enable iCloud sync. We only disclose information when required by law or to protect user safety.</p>
+            
+            <h2>4. Data Security</h2>
+            <p>Your data is stored locally on your device. If you enable iCloud sync, data transmission uses secure channels and follows Apple's security measures. You can delete all local data by uninstalling the app.</p>
+            
+            <h2>5. Your Rights</h2>
+            <p>You can view and edit your data within the app. To remove all local data, uninstall the app. You can turn off iCloud sync at any time in settings.</p>
+            
+            <div class="contact-info">
+                <h3>6. Contact Us</h3>
+                <p>If you have any questions about this privacy policy or need to exercise your rights, please contact us through:</p>
+                <p><strong>Email:</strong> <a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
+            </div>
+        </div>
     </div>
-
+    
     <script>
-      (function() {
-        const qs = (s) => document.querySelector(s);
-        const langFromStorage = localStorage.getItem('litto_lang');
-        // Choose saved language, otherwise infer from navigator.language
-        const preferred = langFromStorage || (((navigator.language || '').toLowerCase().startsWith('zh')) ? 'zh' : 'en');
-
-        function setLang(lang) {
-          const zh = qs('#zh');
-          const en = qs('#en');
-          const btnZh = qs('#btn-zh');
-          const btnEn = qs('#btn-en');
-          const isZh = lang === 'zh';
-          zh.hidden = !isZh;
-          en.hidden = isZh;
-          btnZh.classList.toggle('active', isZh);
-          btnEn.classList.toggle('active', !isZh);
-          btnZh.setAttribute('aria-selected', String(isZh));
-          btnEn.setAttribute('aria-selected', String(!isZh));
-          localStorage.setItem('litto_lang', lang);
-          document.documentElement.lang = lang;
+        function switchLanguage(lang) {
+            // 隐藏所有内容
+            document.getElementById('content-zh').style.display = 'none';
+            document.getElementById('content-en').style.display = 'none';
+            
+            // 移除所有按钮的active类
+            document.getElementById('btn-zh').classList.remove('active');
+            document.getElementById('btn-en').classList.remove('active');
+            
+            // 显示选中的语言内容
+            if (lang === 'zh') {
+                document.getElementById('content-zh').style.display = 'block';
+                document.getElementById('btn-zh').classList.add('active');
+                document.documentElement.lang = 'zh-CN';
+            } else {
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('btn-en').classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+            
+            // 保存语言偏好到localStorage
+            localStorage.setItem('preferredLanguage', lang);
         }
-
-        qs('#btn-zh').addEventListener('click', () => setLang('zh'));
-        qs('#btn-en').addEventListener('click', () => setLang('en'));
-
-        setLang(preferred);
-        qs('#year').textContent = new Date().getFullYear();
-        qs('#updated').textContent = new Date().toISOString().slice(0, 10);
-      })();
+        
+        // 页面加载时恢复语言偏好
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+            switchLanguage(savedLang);
+        });
     </script>
-  </body>
+</body>
 </html>
