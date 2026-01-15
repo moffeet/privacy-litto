@@ -78,6 +78,13 @@
             padding-bottom: 5px;
         }
         
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
         p {
             margin-bottom: 15px;
             text-align: justify;
@@ -158,28 +165,255 @@
         <!-- 中文版本 -->
         <div id="content-zh" class="lang-zh">
             <h1>隐私政策</h1>
-            <p class="last-updated">最后更新：2025年</p>
+            <p class="last-updated">最后更新：2026年1月</p>
             
             <h2>引言</h2>
-            <p>我们尊重您的隐私。本政策说明我们收集哪些信息、如何使用以及您的选择。</p>
+            <p>欢迎使用 Litto（以下简称"本应用"或"我们"）。我们非常重视您的隐私权，并致力于保护您的个人信息。本隐私政策详细说明我们如何收集、使用、存储和保护您的个人信息。</p>
             
             <h2>1. 我们收集的信息</h2>
-            <p>我们会在您的设备上本地存储您的专注记录、标签、计划和应用设置。如果您使用 Apple 登录，我们可能会在本地保存您的 Apple 账户信息。如果您开启 iCloud 同步功能，我们会使用设备标识符通过 iCloud 在多设备间保持数据同步。我们不收集崩溃日志或统计分析数据。</p>
+            
+            <h3>1.1 您主动提供的信息：</h3>
+            <ul>
+                <li><strong>专注记录：</strong>包括专注时长、开始时间、结束时间、标签信息</li>
+                <li><strong>专注计划：</strong>包括计划名称、时长、重复模式、标签关联</li>
+                <li><strong>标签和习惯：</strong>包括标签名称、颜色、创建时间</li>
+                <li><strong>应用设置：</strong>包括主题选择、语言偏好、通知设置</li>
+                <li><strong>用户配置（可选）：</strong>如果您使用 Sign in with Apple，我们会收集：
+                    <ul>
+                        <li>Apple ID 标识符（匿名）</li>
+                        <li>显示名称（如果您选择共享）</li>
+                        <li>邮箱地址（如果您选择共享）</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>1.2 自动收集的信息：</h3>
+            <ul>
+                <li><strong>设备信息：</strong>
+                    <ul>
+                        <li>设备型号（如 iPhone 15 Pro）</li>
+                        <li>操作系统版本（如 iOS 17.0）</li>
+                        <li>设备标识符（用于未登录用户的临时识别）</li>
+                    </ul>
+                </li>
+                <li><strong>应用使用统计：</strong>
+                    <ul>
+                        <li>功能使用频率</li>
+                        <li>崩溃报告</li>
+                        <li>性能指标</li>
+                        <li>仅用于改进应用性能和用户体验</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>1.3 通过第三方服务收集的信息：</h3>
+            <ul>
+                <li><strong>Apple Sign In：</strong>如果您使用 Sign in with Apple，我们会收到 Apple 提供的匿名标识符</li>
+                <li><strong>iCloud（可选）：</strong>如果您启用 iCloud 同步，数据会存储在您的 iCloud 账户中</li>
+            </ul>
             
             <h2>2. 信息使用目的</h2>
-            <p>我们使用这些数据来提供专注计时功能、显示您的记录、保存您的设置，以及如果您开启 iCloud 同步功能，通过 iCloud 在多设备间保持数据同步。我们不会将您的数据用于广告或用户画像。</p>
+            <p>我们收集您的信息仅用于以下目的：</p>
+            <ul>
+                <li>提供专注计时和统计功能</li>
+                <li>同步您的数据到云端（如果您选择使用同步功能）</li>
+                <li>改进应用功能和用户体验</li>
+                <li>提供技术支持和客户服务</li>
+                <li>遵守法律法规要求</li>
+            </ul>
             
             <h2>3. 信息共享</h2>
-            <p>我们不会向第三方出售或共享您的个人数据。除非您开启 iCloud 同步功能，否则您的数据将保留在您的设备上。我们仅在法律要求或保护用户安全时才会披露信息。</p>
+            <p>我们承诺不会出售、出租或以其他方式向第三方披露您的个人信息，除非：</p>
+            <ul>
+                <li>获得您的明确同意</li>
+                <li>法律法规要求</li>
+                <li>为保护我们的合法权益</li>
+                <li>紧急情况下保护用户安全</li>
+            </ul>
             
-            <h2>4. 数据安全</h2>
-            <p>您的数据存储在您的设备本地。如果您开启 iCloud 同步功能，数据传输会使用安全通道，并遵循 Apple 的安全措施。您可以通过卸载应用来删除所有本地数据。</p>
+            <h2>4. 数据存储和同步</h2>
             
-            <h2>5. 您的权利</h2>
-            <p>您可以在应用内查看和编辑您的数据。要删除所有本地数据，请卸载应用。您可以随时在设置中关闭 iCloud 同步功能。</p>
+            <h3>4.1 本地存储：</h3>
+            <ul>
+                <li>您的专注记录、计划、标签等数据主要存储在您的设备本地</li>
+                <li>数据使用 SwiftData 框架加密存储</li>
+            </ul>
+            
+            <h3>4.2 iCloud 同步（可选功能）：</h3>
+            <ul>
+                <li>如果您选择启用 iCloud 同步，您的数据会：
+                    <ul>
+                        <li>存储在您的个人 iCloud 账户中</li>
+                        <li>在您登录同一 Apple ID 的所有设备间同步</li>
+                        <li>受 Apple 的 iCloud 安全措施保护</li>
+                    </ul>
+                </li>
+                <li>您可以随时在应用设置中关闭 iCloud 同步</li>
+                <li>关闭同步不会删除已存储在 iCloud 中的数据</li>
+            </ul>
+            
+            <h3>4.3 数据备份：</h3>
+            <ul>
+                <li>您可以通过应用内的备份功能导出数据</li>
+                <li>备份文件存储在您的设备本地，您可以自行管理</li>
+            </ul>
+            
+            <h2>5. 账户和认证</h2>
+            
+            <h3>5.1 可选注册：</h3>
+            <ul>
+                <li>使用本应用不需要注册账户</li>
+                <li>您可以不登录直接使用所有功能（包括购买会员）</li>
+            </ul>
+            
+            <h3>5.2 Sign in with Apple（可选）：</h3>
+            <ul>
+                <li>如果您选择使用 Sign in with Apple：
+                    <ul>
+                        <li>我们会收到 Apple 提供的匿名用户标识符</li>
+                        <li>您可以选择是否共享邮箱地址和姓名</li>
+                        <li>我们不会看到您的真实 Apple ID</li>
+                    </ul>
+                </li>
+                <li>登录主要用于：
+                    <ul>
+                        <li>在多设备间同步数据（需配合 iCloud 同步）</li>
+                        <li>恢复已购买的会员（通过 App Store 恢复）</li>
+                    </ul>
+                </li>
+                <li>您可以随时注销账户，注销不会影响已购买的会员</li>
+            </ul>
+            
+            <h3>5.3 设备标识符：</h3>
+            <ul>
+                <li>未登录用户使用设备标识符（identifierForVendor）来：
+                    <ul>
+                        <li>关联会员购买记录</li>
+                        <li>在重装应用后恢复会员状态</li>
+                    </ul>
+                </li>
+                <li>设备标识符不会用于追踪或广告目的</li>
+            </ul>
+            
+            <h2>6. 会员功能</h2>
+            
+            <h3>6.1 会员类型：</h3>
+            <ul>
+                <li><strong>免费版：</strong>提供基础的专注计时功能</li>
+                <li><strong>会员版（Litto Plus）：</strong>提供高级功能，包括：
+                    <ul>
+                        <li>无限专注记录</li>
+                        <li>高级统计数据</li>
+                        <li>自定义白噪音</li>
+                        <li>应用屏蔽功能</li>
+                        <li>iCloud 数据同步</li>
+                        <li>高级主题</li>
+                        <li>更多标签和习惯</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>6.2 会员数据：</h3>
+            <ul>
+                <li>会员状态与您的 Apple ID 或设备标识符关联</li>
+                <li>会员信息存储在本地，并通过 App Store 验证</li>
+                <li>我们不会收集额外的个人信息用于会员验证</li>
+            </ul>
+            
+            <h2>7. 订阅和支付</h2>
+            
+            <h3>7.1 订阅类型：</h3>
+            <p>本应用提供以下订阅选项：</p>
+            <ul>
+                <li>月度会员（自动续期订阅）</li>
+                <li>年度会员（自动续期订阅）</li>
+                <li>终身会员（一次性购买）</li>
+            </ul>
+            
+            <h3>7.2 支付处理：</h3>
+            <ul>
+                <li>所有支付通过 Apple App Store 处理</li>
+                <li>我们不会收集或存储您的支付信息</li>
+                <li>支付信息由 Apple 安全处理</li>
+            </ul>
+            
+            <h3>7.3 自动续期：</h3>
+            <ul>
+                <li>月度/年度订阅会自动续期，除非您在订阅期结束前至少 24 小时取消</li>
+                <li>取消方式：设置 > [您的 Apple ID] > 订阅 > Litto</li>
+                <li>取消后，您可以在当前订阅期结束前继续使用会员功能</li>
+            </ul>
+            
+            <h3>7.4 退款政策：</h3>
+            <ul>
+                <li>退款请求需通过 Apple App Store 处理</li>
+                <li>根据 Apple 的退款政策，您可以在购买后 14 天内申请退款</li>
+            </ul>
+            
+            <h2>8. 数据保留和删除</h2>
+            
+            <h3>8.1 数据保留：</h3>
+            <ul>
+                <li>您的数据会一直保留在您的设备上，直到您主动删除</li>
+                <li>如果启用 iCloud 同步，数据会保留在您的 iCloud 账户中</li>
+            </ul>
+            
+            <h3>8.2 删除数据：</h3>
+            <ul>
+                <li>您可以在应用内删除单个记录、计划或标签</li>
+                <li>您可以通过应用设置清除所有本地数据</li>
+                <li>删除 iCloud 数据需要在 iCloud 设置中操作</li>
+                <li>删除账户不会自动删除已购买的会员（会员由 App Store 管理）</li>
+            </ul>
+            
+            <h3>8.3 注销账户：</h3>
+            <ul>
+                <li>如果您使用 Sign in with Apple，可以随时注销</li>
+                <li>注销后，本地数据不会自动删除</li>
+                <li>您需要手动清除应用数据</li>
+            </ul>
+            
+            <h2>9. 儿童隐私</h2>
+            <ul>
+                <li>本应用不面向 13 岁以下的儿童</li>
+                <li>我们不会故意收集 13 岁以下儿童的个人信息</li>
+                <li>如果您是家长或监护人，发现您的孩子向我们提供了个人信息，请联系我们删除</li>
+            </ul>
+            
+            <h2>10. 国际数据传输</h2>
+            <ul>
+                <li>您的数据主要存储在您的设备本地</li>
+                <li>如果使用 iCloud 同步，数据可能存储在您所在地区的 iCloud 服务器</li>
+                <li>我们不会将您的数据传输到其他地区或国家</li>
+            </ul>
+            
+            <h2>11. 数据安全</h2>
+            <p>我们采用行业标准的安全措施保护您的个人信息：</p>
+            <ul>
+                <li>数据加密存储和传输</li>
+                <li>访问控制与权限管理</li>
+                <li>定期安全审计与更新</li>
+            </ul>
+            
+            <h2>12. 您的权利</h2>
+            <p>您对自己的个人信息享有以下权利：</p>
+            <ul>
+                <li><strong>访问权：</strong>查看我们持有的您的个人信息</li>
+                <li><strong>更正权：</strong>要求更正不准确的个人信息</li>
+                <li><strong>删除权：</strong>要求删除您的个人信息</li>
+                <li><strong>限制处理权：</strong>限制我们处理您的个人信息</li>
+                <li><strong>数据可携权：</strong>获取您的个人信息副本</li>
+            </ul>
+            
+            <h2>13. 隐私政策更新</h2>
+            <ul>
+                <li>我们可能会不时更新本隐私政策</li>
+                <li>重大变更时，我们会在应用内通知您</li>
+                <li>继续使用应用即表示您接受更新后的隐私政策</li>
+            </ul>
             
             <div class="contact-info">
-                <h3>6. 联系我们</h3>
+                <h3>14. 联系我们</h3>
                 <p>如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：</p>
                 <p><strong>邮箱：</strong><a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
             </div>
@@ -188,29 +422,256 @@
         <!-- 英文版本 -->
         <div id="content-en" class="lang-en">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: 2025</p>
+            <p class="last-updated">Last Updated: January 2026</p>
             
             <h2>Introduction</h2>
-            <p>We respect your privacy. This policy explains what information we collect, how we use it, and your choices.</p>
+            <p>Welcome to Litto ("the App", "we", or "us"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data.</p>
             
             <h2>1. Information We Collect</h2>
-            <p>We store your focus records, tags, plans, and app settings locally on your device. If you sign in with Apple, we may store your Apple account information locally. If you enable iCloud sync, we use a device identifier to keep your data synchronized across your devices via iCloud. We do not collect crash logs or analytics data.</p>
             
-            <h2>2. Purpose of Information Use</h2>
-            <p>We use this data to provide focus timing features, display your records, save your settings, and keep your data synchronized across your devices via iCloud if you enable sync. We do not use your data for advertising or user profiling.</p>
+            <h3>1.1 Information You Provide:</h3>
+            <ul>
+                <li><strong>Focus records:</strong> including focus duration, start time, end time, tag information</li>
+                <li><strong>Focus plans:</strong> including plan name, duration, repeat mode, tag associations</li>
+                <li><strong>Tags and habits:</strong> including tag names, colors, creation time</li>
+                <li><strong>App settings:</strong> including theme selection, language preferences, notification settings</li>
+                <li><strong>User profile (optional):</strong> If you use Sign in with Apple, we collect:
+                    <ul>
+                        <li>Apple ID identifier (anonymous)</li>
+                        <li>Display name (if you choose to share)</li>
+                        <li>Email address (if you choose to share)</li>
+                    </ul>
+                </li>
+            </ul>
             
-            <h2>3. Information Sharing</h2>
-            <p>We do not sell or share your personal data with third parties. Your data stays on your device unless you enable iCloud sync. We only disclose information when required by law or to protect user safety.</p>
+            <h3>1.2 Information Collected Automatically:</h3>
+            <ul>
+                <li><strong>Device information:</strong>
+                    <ul>
+                        <li>Device model (e.g., iPhone 15 Pro)</li>
+                        <li>Operating system version (e.g., iOS 17.0)</li>
+                        <li>Device identifier (for temporary identification of non-logged-in users)</li>
+                    </ul>
+                </li>
+                <li><strong>Usage analytics:</strong>
+                    <ul>
+                        <li>Feature usage frequency</li>
+                        <li>Crash reports</li>
+                        <li>Performance metrics</li>
+                        <li>Used only to improve app performance and user experience</li>
+                    </ul>
+                </li>
+            </ul>
             
-            <h2>4. Data Security</h2>
-            <p>Your data is stored locally on your device. If you enable iCloud sync, data transmission uses secure channels and follows Apple's security measures. You can delete all local data by uninstalling the app.</p>
+            <h3>1.3 Information Collected Through Third-Party Services:</h3>
+            <ul>
+                <li><strong>Apple Sign In:</strong> If you use Sign in with Apple, we receive an anonymous identifier provided by Apple</li>
+                <li><strong>iCloud (optional):</strong> If you enable iCloud sync, data is stored in your iCloud account</li>
+            </ul>
             
-            <h2>5. Your Rights</h2>
-            <p>You can view and edit your data within the app. To remove all local data, uninstall the app. You can turn off iCloud sync at any time in settings.</p>
+            <h2>2. How We Use Your Information</h2>
+            <p>We collect your information solely for the following purposes:</p>
+            <ul>
+                <li>Provide focus timer and statistics features</li>
+                <li>Sync your data to the cloud (if you choose to use the sync feature)</li>
+                <li>Improve features and user experience</li>
+                <li>Provide technical support and customer service</li>
+                <li>Comply with legal and regulatory requirements</li>
+            </ul>
+            
+            <h2>3. Sharing of Information</h2>
+            <p>We do not sell or rent your personal information. We share it only when:</p>
+            <ul>
+                <li>We have your explicit consent</li>
+                <li>Required by law or legal process</li>
+                <li>Necessary to protect our legitimate rights and interests</li>
+                <li>Needed to protect user safety in an emergency</li>
+            </ul>
+            
+            <h2>4. Data Storage and Sync</h2>
+            
+            <h3>4.1 Local Storage:</h3>
+            <ul>
+                <li>Your focus records, plans, tags, and other data are primarily stored locally on your device</li>
+                <li>Data is encrypted using the SwiftData framework</li>
+            </ul>
+            
+            <h3>4.2 iCloud Sync (Optional Feature):</h3>
+            <ul>
+                <li>If you choose to enable iCloud sync, your data will:
+                    <ul>
+                        <li>Be stored in your personal iCloud account</li>
+                        <li>Sync across all devices logged in with the same Apple ID</li>
+                        <li>Be protected by Apple's iCloud security measures</li>
+                    </ul>
+                </li>
+                <li>You can turn off iCloud sync at any time in app settings</li>
+                <li>Turning off sync will not delete data already stored in iCloud</li>
+            </ul>
+            
+            <h3>4.3 Data Backup:</h3>
+            <ul>
+                <li>You can export data through the backup feature in the app</li>
+                <li>Backup files are stored locally on your device, and you can manage them yourself</li>
+            </ul>
+            
+            <h2>5. Account and Authentication</h2>
+            
+            <h3>5.1 Optional Registration:</h3>
+            <ul>
+                <li>Using this app does not require account registration</li>
+                <li>You can use all features (including purchasing membership) without logging in</li>
+            </ul>
+            
+            <h3>5.2 Sign in with Apple (Optional):</h3>
+            <ul>
+                <li>If you choose to use Sign in with Apple:
+                    <ul>
+                        <li>We receive an anonymous user identifier provided by Apple</li>
+                        <li>You can choose whether to share your email address and name</li>
+                        <li>We cannot see your real Apple ID</li>
+                    </ul>
+                </li>
+                <li>Login is mainly used for:
+                    <ul>
+                        <li>Syncing data across multiple devices (requires iCloud sync)</li>
+                        <li>Restoring purchased membership (through App Store restore)</li>
+                    </ul>
+                </li>
+                <li>You can log out at any time, and logging out will not affect your purchased membership</li>
+            </ul>
+            
+            <h3>5.3 Device Identifier:</h3>
+            <ul>
+                <li>Non-logged-in users use device identifiers (identifierForVendor) to:
+                    <ul>
+                        <li>Associate membership purchase records</li>
+                        <li>Restore membership status after reinstalling the app</li>
+                    </ul>
+                </li>
+                <li>Device identifiers are not used for tracking or advertising purposes</li>
+            </ul>
+            
+            <h2>6. Membership Features</h2>
+            
+            <h3>6.1 Membership Types:</h3>
+            <ul>
+                <li><strong>Free version:</strong> Provides basic focus timer features</li>
+                <li><strong>Membership version (Litto Plus):</strong> Provides premium features, including:
+                    <ul>
+                        <li>Unlimited focus records</li>
+                        <li>Advanced statistics</li>
+                        <li>Custom white noise</li>
+                        <li>App blocking features</li>
+                        <li>iCloud data sync</li>
+                        <li>Premium themes</li>
+                        <li>More tags and habits</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>6.2 Membership Data:</h3>
+            <ul>
+                <li>Membership status is associated with your Apple ID or device identifier</li>
+                <li>Membership information is stored locally and verified through the App Store</li>
+                <li>We do not collect additional personal information for membership verification</li>
+            </ul>
+            
+            <h2>7. Subscriptions and Payments</h2>
+            
+            <h3>7.1 Subscription Types:</h3>
+            <p>This app offers the following subscription options:</p>
+            <ul>
+                <li>Monthly membership (auto-renewable subscription)</li>
+                <li>Annual membership (auto-renewable subscription)</li>
+                <li>Lifetime membership (one-time purchase)</li>
+            </ul>
+            
+            <h3>7.2 Payment Processing:</h3>
+            <ul>
+                <li>All payments are processed through the Apple App Store</li>
+                <li>We do not collect or store your payment information</li>
+                <li>Payment information is securely processed by Apple</li>
+            </ul>
+            
+            <h3>7.3 Auto-Renewal:</h3>
+            <ul>
+                <li>Monthly/annual subscriptions will automatically renew unless you cancel at least 24 hours before the end of the subscription period</li>
+                <li>To cancel: Settings > [Your Apple ID] > Subscriptions > Litto</li>
+                <li>After cancellation, you can continue using membership features until the end of the current subscription period</li>
+            </ul>
+            
+            <h3>7.4 Refund Policy:</h3>
+            <ul>
+                <li>Refund requests must be processed through the Apple App Store</li>
+                <li>According to Apple's refund policy, you can request a refund within 14 days of purchase</li>
+            </ul>
+            
+            <h2>8. Data Retention and Deletion</h2>
+            
+            <h3>8.1 Data Retention:</h3>
+            <ul>
+                <li>Your data will remain on your device until you actively delete it</li>
+                <li>If iCloud sync is enabled, data will remain in your iCloud account</li>
+            </ul>
+            
+            <h3>8.2 Data Deletion:</h3>
+            <ul>
+                <li>You can delete individual records, plans, or tags within the app</li>
+                <li>You can clear all local data through app settings</li>
+                <li>Deleting iCloud data requires operation in iCloud settings</li>
+                <li>Deleting your account will not automatically delete purchased membership (membership is managed by the App Store)</li>
+            </ul>
+            
+            <h3>8.3 Account Deletion:</h3>
+            <ul>
+                <li>If you use Sign in with Apple, you can log out at any time</li>
+                <li>After logging out, local data will not be automatically deleted</li>
+                <li>You need to manually clear app data</li>
+            </ul>
+            
+            <h2>9. Children's Privacy</h2>
+            <ul>
+                <li>This app is not directed to children under the age of 13</li>
+                <li>We do not knowingly collect personal information from children under 13</li>
+                <li>If you are a parent or guardian and discover that your child has provided us with personal information, please contact us to delete it</li>
+            </ul>
+            
+            <h2>10. International Data Transfers</h2>
+            <ul>
+                <li>Your data is primarily stored locally on your device</li>
+                <li>If iCloud sync is used, data may be stored on iCloud servers in your region</li>
+                <li>We do not transfer your data to other regions or countries</li>
+            </ul>
+            
+            <h2>11. Data Security</h2>
+            <p>We employ industry-standard safeguards to protect your information, including:</p>
+            <ul>
+                <li>Encryption for storage and transmission</li>
+                <li>Access control and permission management</li>
+                <li>Regular security reviews and updates</li>
+            </ul>
+            
+            <h2>12. Your Rights</h2>
+            <p>You have the following rights over your personal information:</p>
+            <ul>
+                <li><strong>Right of access:</strong> view the personal information we hold about you</li>
+                <li><strong>Right to rectification:</strong> request correction of inaccurate information</li>
+                <li><strong>Right to erasure:</strong> request deletion of your personal information</li>
+                <li><strong>Right to restriction:</strong> limit how we process your personal information</li>
+                <li><strong>Right to data portability:</strong> obtain a copy of your personal information</li>
+            </ul>
+            
+            <h2>13. Privacy Policy Updates</h2>
+            <ul>
+                <li>We may update this Privacy Policy from time to time</li>
+                <li>We will notify you in the app when there are significant changes</li>
+                <li>Continued use of the app indicates your acceptance of the updated Privacy Policy</li>
+            </ul>
             
             <div class="contact-info">
-                <h3>6. Contact Us</h3>
-                <p>If you have any questions about this privacy policy or need to exercise your rights, please contact us through:</p>
+                <h3>14. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy or need to exercise your rights, contact us at:</p>
                 <p><strong>Email:</strong> <a href="mailto:littochining@gmail.com">littochining@gmail.com</a></p>
             </div>
         </div>
@@ -249,3 +710,4 @@
     </script>
 </body>
 </html>
+
